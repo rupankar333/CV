@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #f5f5f5;
+    color: #111;
+    padding: 30px;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+}
+
+/* LEFT SECTION */
+
+.left-section{
+    width: 35%;
+    background: #111;
+    color: #fff;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.profile-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+}
+
+.left-section h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.role{
+    font-size: 17px;
+    color: #d1d5db;
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+
+.button-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn{
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    background: #d1d5db;
+    transform: translateY(-2px);
+}
+
+/* SECTIONS */
+
+.section{
+    margin-top: 35px;
+    text-align: left;
+}
+
+.section h2{
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding-bottom: 8px;
+}
+
+.section p{
+    margin-bottom: 10px;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    background: rgba(255,255,255,0.08);
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+ul li:hover{
+    background: rgba(255,255,255,0.15);
+}
+
+/* RIGHT SECTION */
+
+.right-section{
+    width: 65%;
+    padding: 45px;
+    background: #fff;
+}
+
+.right-section .section h2{
+    color: #111;
+    border-bottom: 2px solid #111;
+}
+
+.right-section p{
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.right-section h3{
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+/* PROJECT CARD */
+
+.project{
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 1px solid #e5e5e5;
+    transition: 0.3s ease;
+}
+
+.project:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* PROJECT BUTTON */
+
+.project-btn{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background: #111;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.project-btn:hover{
+    background: #333;
+    transform: scale(1.03);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 900px){
+
+    .container{
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section{
+        width: 100%;
+    }
+
+    .right-section{
+        padding: 30px;
+    }
+}
+
+@media(max-width: 600px){
+
+    body{
+        padding: 15px;
+    }
+
+    .left-section h1{
+        font-size: 26px;
+    }
+
+    .profile-img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-btn{
+        width: 100%;
+        text-align: center;
+    }
+}
